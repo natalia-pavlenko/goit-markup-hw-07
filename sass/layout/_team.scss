@@ -1,0 +1,18 @@
+.team-section {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: #212121;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}

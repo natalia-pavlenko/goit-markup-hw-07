@@ -1,0 +1,15 @@
+.footer {
+  background-color: var(--dark-bg-cl--);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+  &__logo {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
