@@ -181,6 +181,10 @@ body {
   margin-left: auto;
   gap: 50px;
 }
+.contacts .contacts__items:hover,
+.contacts .contacts__items:focus {
+  fill: var(--color-accent);
+}
 .contacts .contacts__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,10 +199,6 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-}
-.contacts .contacts__items:hover,
-.contacts .contacts__items:focus {
-  fill: var(--color-accent);
 }
 .contacts .contacts__link:hover {
   color: var(--color-accent);
@@ -232,7 +232,7 @@ body {
   -webkit-transition: opacity var(--animation), visibility var(--animation);
   transition: opacity var(--animation), visibility var(--animation);
 }
-.backdrop--is-hidden {
+.backdrop backdrop--is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;

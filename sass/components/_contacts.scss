@@ -3,6 +3,10 @@
   margin-left: auto;
   gap: 50px;
 
+  .contacts__items:hover,
+  .contacts__items:focus {
+    fill: var(--color-accent);
+  }
   .contacts__link {
     display: flex;
     align-items: center;
@@ -13,15 +17,11 @@
     font-size: 14px;
     line-height: 1.14;
   }
-  .contacts__items:hover,
-  .contacts__items:focus {
-    fill: var(--color-accent);
+
+  .contacts__link:hover {
+    color: var(--color-accent);
   }
 
-   .contacts__link:hover {
-      color: var(--color-accent);
-    }  
-    
   .icon-envelope {
     margin-right: 10px;
     fill: currentColor;
@@ -30,4 +30,4 @@
     margin-right: 10px;
     fill: currentColor;
   }
-
+}

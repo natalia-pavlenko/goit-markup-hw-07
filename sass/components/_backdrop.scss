@@ -14,7 +14,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity var(--animation), visibility var(--animation);
 
-  &--is-hidden {
+  backdrop--is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
