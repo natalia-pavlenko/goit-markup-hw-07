@@ -18,10 +18,10 @@
     fill: var(--color-accent);
   }
 
-  .contacts__link:hover {
-    color: var(--color-accent);
-  }
-
+   .contacts__link:hover {
+      color: var(--color-accent);
+    }  
+    
   .icon-envelope {
     margin-right: 10px;
     fill: currentColor;
@@ -30,4 +30,4 @@
     margin-right: 10px;
     fill: currentColor;
   }
-}
+
