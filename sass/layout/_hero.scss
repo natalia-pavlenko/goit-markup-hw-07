@@ -9,7 +9,10 @@
   background-position: center;
   background-size: cover;
 }
-
+.hero--section {
+  background-color: var(--dark-bg-cl--);
+  padding: 200px 0;
+}
 .hero__title {
   text-transform: uppercase;
   font-weight: 900;

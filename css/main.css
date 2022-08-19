@@ -11,7 +11,7 @@
   --dark-bg-cl--: #2f303a;
   /* other */
   --indent: 30px;
-  --animation: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link {
@@ -232,7 +232,8 @@ body {
   -webkit-transition: opacity var(--animation), visibility var(--animation);
   transition: opacity var(--animation), visibility var(--animation);
 }
-.backdrop backdrop--is-hidden {
+
+.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -440,7 +441,7 @@ body {
   margin: auto;
 }
 
-.modal__btn {
+.modal__btn--close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -464,15 +465,9 @@ body {
   transition: fill var(--animation);
 }
 
-.btn--hovered:hover,
-.btn--focused:focus {
+.btn--close:hover,
+.btn--close:focus {
   fill: var(--color-accent);
-}
-
-.backdrop--is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
 }
 
 .hero {
@@ -485,6 +480,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.hero--section {
+  background-color: var(--dark-bg-cl--);
+  padding: 200px 0;
 }
 
 .hero__title {
@@ -597,13 +597,6 @@ body {
 .doing .doing__list img {
   display: block;
 }
-.doing .doing__list .doing__card.item {
-  --items: 3;
-}
-.doing .doing__list .doing__item {
-  -ms-flex-preferred-size: calc((100% - 30 * (var(--items) - 1)) / var(--items));
-      flex-basis: calc((100% - 30 * (var(--items) - 1)) / var(--items));
-}
 .doing .doing__list .doing__card {
   position: relative;
 }
@@ -643,7 +636,7 @@ body {
       flex-wrap: wrap;
   gap: 30px;
 }
-.team__list__card {
+.team__card {
   display: block;
   background: var(--color-white);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

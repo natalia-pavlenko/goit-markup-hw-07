@@ -349,7 +349,7 @@ ul {
   margin: auto;
 }
 
-.modal__btn {
+.modal__btn--clise {
   position: absolute;
   top: 8px;
   right: 8px;

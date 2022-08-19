@@ -17,12 +17,12 @@
     img {
       display: block;
     }
-    .doing__card.item {
-      --items: 3;
-    }
-    .doing__item {
-      flex-basis: calc((100% - 30 * (var(--items) - 1)) / var(--items));
-    }
+    // .doing__card.item {
+    //   --items: 3;
+    // }
+    // .doing__item {
+    //   flex-basis: calc((100% - 30 * (var(--items) - 1)) / var(--items));
+    // }
 
     .doing__card {
       position: relative;

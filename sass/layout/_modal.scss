@@ -135,7 +135,7 @@
   margin: auto;
 }
 
-.modal__btn {
+.modal__btn--close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -152,12 +152,13 @@
   background-color: transparent;
   transition: fill var(--animation);
 }
-.btn--hovered:hover,
-.btn--focused:focus {
+.btn--close:hover,
+.btn--close:focus {
   fill: var(--color-accent);
 }
-.backdrop--is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
+// .backdrop--is-hidden {
+//   visibility: hidden;
+//   opacity: 0;
+//   pointer-events: none;
+// }
+// btn--hovered btn--focused
